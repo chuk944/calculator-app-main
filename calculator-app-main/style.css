@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap');
+
+*, ::before, ::after {
+   box-sizing: border-box;
+}
+
+html {
+   font-size: 62.5%;
+   font-family: 'League Spartan', sans-serif;
+   font-weight: 700;
+   
+}
+
+body {
+   margin: 0;
+   padding: 0; 
+   
+}
+
+:root {
+    /* Theme 1 */
+
+    /* Backgrounds */    
+--veryDarkDesaturatedBlue1: hsl(222, 26%, 31%);/* (main background) */
+--veryDarkDesaturatedBlue2: hsl(223, 31%, 20%); /*(toggle background, keypad background) */
+--veryDarkDesaturatedBlue3: hsl(224, 36%, 15%); /*(screen background) */
+
+   /* Keys */
+--desaturatedDarkBlue1: hsl(225, 21%, 49%); /*(key background)*/
+--desaturatedDarkBlue2: hsl(224, 28%, 35%);/*(key shadow)*/
+
+--red: hsl(6, 63%, 50%); /*(key background, toggle)*/
+--darkRed: hsl(6, 70%, 34%); /*(key shadow)*/
+
+--lightGrayishOrange : hsl(30, 25%, 89%);/*(key background)*/
+--grayishOrange: hsl(28, 16%, 65%);/*(key shadow) */
+
+    /* Text */
+--veryDarkGrayishBlue: hsl(221, 14%, 31%);
+--white:#fff;
+
+   /* Theme 2 */
+
+    /* Backgrounds */
+--lightGray: hsl(0, 0%, 90%); /*(main background)*/
+--grayishRed: hsl(0, 5%, 81%); /*(toggle background, keypad background)*/
+--veryLightGray: hsl(0, 0%, 93%); /*(screen background)*/
+
+   /* Keys */
+--darkModerateCyan: hsl(185, 42%, 37%); /*(key background)*/
+--veryDarkCyan: hsl(185, 58%, 25%);  /*(key shadow)*/
+
+--orange: hsl(25, 98%, 40%); /*(key background, toggle)*/
+--darkOrange: hsl(25, 99%, 27%); /*(key shadow)*/
+
+--lightGrayishYellow: hsl(45, 7%, 89%); /*(key background)*/
+--darkGrayishOrange: hsl(35, 11%, 61%); /*(key shadow)*/
+
+   /* Text */
+--veryDarkGrayishYellow: hsl(60, 10%, 19%);
+
+   /* Theme 3 */
+
+  /* Backgrounds */
+--veryDarkViolet1: hsl(268, 75%, 9%); /*(main background)*/
+--veryDarkViolet2: hsl(268, 71%, 12%);  /*(toggle background, keypad background, screen background)*/
+
+   /* Keys */
+--darkViolet: hsl(281, 89%, 26%); /*(key background)*/
+--vividMagenta: hsl(285, 91%, 52%);  /*(key shadow)*/
+
+--pureCyan: hsl(176, 100%, 44%); /*(key background, toggle)*/
+--softCyan: hsl(177, 92%, 70%);  /*(key shadow)*/
+
+--veryDarkViolet: hsl(268, 47%, 21%); /*(key background)*/
+--darkMagenta: hsl(290, 70%, 36%); /*(key shadow)*/
+
+  /* Text */
+
+--lightYellow: hsl(52, 100%, 62%);
+--veryDarkBlue: hsl(198, 20%, 13%);
+
+}
+
+.calcBody {
+   display: block;
+    width: 90%;
+    background-color: var(--veryDarkDesaturatedBlue1);    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+
+.header-container {
+    display: block;
+    width: 85%;
+    margin: auto;
+    padding: 0em .5em;
+    color: var(--white);
+   
+}
+
+.flex-row {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   
+}
+
+.header {
+   display: block;
+   width: 33%;
+   font-size: 3.5rem;
+   letter-spacing: 2px;
+   padding-bottom: .5em;
+   
+   
+}
+.header2 {
+   display: block;
+   width: 33%;
+   padding-top: .75em;
+   text-transform: uppercase;
+   letter-spacing: 2px;
+   text-align: end;
+  
+
+
+}
+
+
+
+.toggle {
+   display: block;   
+   width: 25%;
+   
+}
+
+.number-toggle {
+   margin-left: 7px;
+   letter-spacing: 5px;
+}
+
+/* The slider itself */
+.slider {
+   -webkit-appearance: none;  
+   appearance: none;
+   width: 65%; 
+   height: 20px; 
+   background: var(--veryDarkDesaturatedBlue2);
+   border-radius: 100px; 
+   padding: 0em .25em;
+   outline: none; 
+   opacity: 0.7; 
+   -webkit-transition: .2s; 
+   transition: opacity .2s;
+ }
+ 
+ /* Mouse-over effects */
+ .slider:hover {
+   opacity: 1; 
+ }
+ 
+ 
+ .slider::-webkit-slider-thumb {
+   -webkit-appearance: none; 
+   appearance: none;
+   width: 12px;
+   height: 12px; 
+   background: var(--red);
+   cursor: pointer; 
+ }
+ 
+ .slider::-moz-range-thumb {
+   width: 12px; 
+   height: 12px; 
+   background: var(--red);
+   cursor: pointer; 
+ }
+
+ /* Display Section */
+
+ .section1-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 85%;
+    margin: auto;
+    padding: 2.0em 2.5em;
+    border-radius: 10px;
+    background-color: var(--veryDarkDesaturatedBlue3);
+    color: var(--white);
+ }
+
+ .display {
+   display: block;
+   font-size: 3.6rem;
+   
+}
