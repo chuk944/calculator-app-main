@@ -8,7 +8,7 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
 
-  <script src="script.js"></script>
+  <script src="script.js" defer></script>
   
   <title>Frontend Mentor | Calculator app</title>
 
@@ -23,7 +23,7 @@
         <h2 class="header2">theme</h2>
         <div class="toggle">
           <label for="themeSwitch" class="number-toggle">1 2 3</label><br>
-            <input type="range" name="themeSwitch" class="slider" id="themeSwitch" min="1" max="3" step="1" value="1">
+            <input type="range" name="themeSwitch" class="slider" id="themeSwitch" min="1" max="3" step="1" value="1" oninput="theme()">
           
         </div>
       </div>
@@ -52,7 +52,7 @@
   <div class="griditem">.</div>
   <div class="griditem">0</div>
   <div class="griditem">/</div>
-  <div class="griditem">x</div>
+  <div class="griditem multiply">*</div>
   <div class="griditem resetKey">Reset</div>
   <div class="griditem equalKey">=</div>
     
