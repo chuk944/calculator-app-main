@@ -1,4 +1,9 @@
 let display = document.getElementById('displayId');
+let dispL = document.getElementById('head1');
+let dispM = document.getElementById('head2');
+let dispR = document.getElementById('head3');
+let equalBlack = document.getElementById('equal');
+
 let newTheme = document.querySelector(':root');
 let operator = false;
 let comma = false;
@@ -60,7 +65,7 @@ buttons.map((button) => {
           display.innerText = '';
           comma = false;
         }
-        // Delete last number enterd
+        // Delete last number entered
         if (display.innerText) {
           display.innerText = display.innerText.slice(0, -1);
         }
@@ -109,6 +114,17 @@ const theme = () => {
       newTheme.style.setProperty('--veryDarkGrayishBlue', 'hsl(221, 14%, 31%)');
       newTheme.style.setProperty('--white', '#fff');
 
+      display.classList.remove("addYellow");
+      dispL.classList.remove("addYellow");
+      dispM.classList.remove("addYellow");
+      dispR.classList.remove("addYellow");
+      equalBlack.classList.remove("addBlack");
+
+      display.classList.remove("addBlack");
+      dispL.classList.remove("addBlack");
+      dispM.classList.remove("addBlack");
+      dispR.classList.remove("addBlack");
+
       break;
 
     case '2':
@@ -144,7 +160,19 @@ const theme = () => {
 
       //Text
       newTheme.style.setProperty('--veryDarkGrayishBlue', 'hsl(60, 10%, 19%)');
-      newTheme.style.setProperty('--white', '#000');
+      newTheme.style.setProperty('--white', '#fff');
+      
+      display.classList.remove("addYellow");
+      dispL.classList.remove("addYellow");
+      dispM.classList.remove("addYellow");
+      dispR.classList.remove("addYellow");
+      equalBlack.classList.remove("addBlack");
+
+      display.classList.add("addBlack");
+      dispL.classList.add("addBlack");
+      dispM.classList.add("addBlack");
+      dispR.classList.add("addBlack");
+
       break;
 
     case '3':
@@ -178,6 +206,19 @@ const theme = () => {
       //Text
       newTheme.style.setProperty('--veryDarkGrayishBlue', 'hsl(52, 100%, 62%)');
       newTheme.style.setProperty('--white', '');
+
+      display.classList.add("addYellow");
+      dispL.classList.add("addYellow");
+      dispM.classList.add("addYellow");
+      dispR.classList.add("addYellow");
+      equalBlack.classList.add("addBlack");
+
+      display.classList.remove("addBlack");
+      dispL.classList.remove("addBlack");
+      dispM.classList.remove("addBlack");
+      dispR.classList.remove("addBlack");
+
+      
       break;
 
     default:
