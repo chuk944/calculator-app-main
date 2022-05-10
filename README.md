@@ -46,7 +46,7 @@ Users should be able to:
 
 ### What I learned
 
-I learned a lot from this project. I was able to re-enforce my skills using CSS Grid. The ability to read directly from the ```<div class="display"></div>``` using the display.innertext was very useful and evaluating it and solving the equation was very cool.I really enjoyed changing the them of the site with JavaScript. This is a great project for polishing your skills in JavaScript.   
+I learned a lot from this project. I was able to re-enforce my skills using CSS Grid. The ability to read directly from the ```<div class="display"></div>``` using the display.innertext was very useful and evaluating it and solving the equation was very cool.I really enjoyed changing the theme of the site with JavaScript. This is a great project for polishing your skills in JavaScript.   
 
 
 ### Continued development
